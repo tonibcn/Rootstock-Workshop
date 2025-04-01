@@ -9,8 +9,12 @@ https://book.getfoundry.sh/getting-started/installation
 ## 1.Una vez instalado, ejecutar:
 foundryup
 
-## 2.Inicializar un nuevo proyecto; abrir en un editor de codigo una nueva carpeta donde desplegar el proyecto (sin control de versiones en este ejemplo)
+## (Opcional) Inicializar un nuevo proyecto; abrir en un editor de codigo una nueva carpeta donde desplegar el proyecto (sin control de versiones en este ejemplo)
 forge init --no-commit
+
+## 2. Descargar el repositorio
+
+git clone https://github.com/tonibcn/Rootstock-workshop/foundry.git
 
 ## 3. Compilar los scripts
 forge build
