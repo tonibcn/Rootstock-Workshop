@@ -14,7 +14,7 @@ forge init --no-commit
 
 ## 2. Descargar el repositorio
 
-git clone https://github.com/tonibcn/Rootstock-workshop/foundry.git
+git clone https://github.com/tonibcn/Rootstock-Workshop/foundry.git
 
 ## 3. Compilar los scripts
 forge build
