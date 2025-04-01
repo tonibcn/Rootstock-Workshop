@@ -1,0 +1,36 @@
+name: Slither Analysis
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions: read-all
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    env:
+      RSK_MAINNET_RPC_URL: ${{ secrets.RSK_MAINNET_RPC_URL }}
+      RSK_TESTNET_RPC_URL: ${{ secrets.RSK_TESTNET_RPC_URL }}
+      WALLET_PRIVATE_KEY: ${{ secrets.WALLET_PRIVATE_KEY }}  
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+    - name: Run Slither
+      uses: crytic/slither-action@f197989dea5b53e986d0f88c60a034ddd77ec9a8 # v0.4.0
+      id: slither
+      with:
+        node-version: 18
+        sarif: results.sarif
+        fail-on: none
+
+    - name: Upload SARIF file
+      uses: github/codeql-action/upload-sarif@48ab28a6f5dbc2a99bf1e0131198dd8f1df78169 # v3.28.0
+      with:
+        sarif_file: ${{ steps.slither.outputs.sarif }}
