@@ -40,7 +40,7 @@ Necesitamos informar:
 source .env
 
 ## (Opcional): Si tuvieramos que desplegar varios scripts o quisieramos desplegar el actual con alguna acción adicional podemos ejecutar un script:
-forge script ./script/Voting.s.sol: VotingDeployScript --rpc-url $ALCHEMY_RPC_URL --private-key $PRIVATE_KEY --legacy
+forge script ./script/Voting.s.sol: VotingDeployScript --rpc-url $ALCHEMY_RPC_URL --private-key $PK_DEPLOYER --legacy
 
 ## 7. Compilar y desplegar directamente en la blockchain:
 forge create ./src/Voting.sol:Voting --rpc-url $ALCHEMY_RPC_URL --private-key $PK_DEPLOYER --broadcast --legacy 
