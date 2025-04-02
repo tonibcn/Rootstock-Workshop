@@ -16,7 +16,7 @@ git clone https://github.com/tonibcn/Rootstock-Workshop.git
 
 ### 2. Asegurar que estás en el directorio correcto. Una vez clonado el repositorio, navega al directorio del proyecto:
 
-cd rootstock-hardhat-starterkit
+cd Rootstock-Workshop/hardhat
 
 ### 3. Instalar todas las dependencias (package.json)
 
