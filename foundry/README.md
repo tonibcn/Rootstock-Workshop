@@ -8,7 +8,7 @@ https://book.getfoundry.sh/getting-started/installation
 
 ## 1.Una vez instalado, ejecutar:
 ```bash
-foundryup ```
+foundryup
 
 ## (Opcional) Inicializar un nuevo proyecto; abrir en un editor de codigo una nueva carpeta donde desplegar el proyecto (sin control de versiones en este ejemplo)
 ```bash
