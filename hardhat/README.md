@@ -31,7 +31,6 @@ npx hardhat compile
 
 ### 6. Testear el smart contract
 npx hardhat test
-npx hardhat test test/Counter-test.ts
 
 ### 7. Despligue en rootstock
 npx hardhat deploy --network rskTestnet
