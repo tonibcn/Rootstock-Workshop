@@ -12,7 +12,7 @@ Antes de comenzar, asegúrate de revisar las instrucciones y los requisitos para
 
 Clona el repositorio de este workshop para obtener los archivos del proyecto:
 
-git clone https://github.com/tonibcn/Rootstock-Workshop/hardhat.git
+git clone https://github.com/tonibcn/Rootstock-Workshop.git
 
 ### 2. Asegurar que estás en el directorio correcto. Una vez clonado el repositorio, navega al directorio del proyecto:
 
