@@ -57,6 +57,8 @@ forge verify-contract \
 ## 8. Realizar consultas (no modicamos el estado de la blockchain):
 ## Consultar la participacion
 cast call $CONTRACT_ADDRESS "getParticipation()" --rpc-url $ALCHEMY_RPC_URL | cast --to-dec
+## Consultar cuanto tiempo de votación queda
+cast call $CONTRACT_ADDRESS "getRemainingTime()" --rpc-url $ALCHEMY_RPC_URL | cast --to-dec
 ## Consultar el listado de votantes (censo)
 cast call $CONTRACT_ADDRESS "allowedVotersList()" --rpc-url $ALCHEMY_RPC_URL
 ## Consultar si ha votado una dirección en concreto
