@@ -74,7 +74,7 @@ cast call $CONTRACT_ADDRESS "electionWinnerVotes()" --rpc-url $ALCHEMY_RPC_URL
 ## 9. Escribir (sí modificamos la blockchain)
 ## Añadimos votantes
 cast send $CONTRACT_ADDRESS "addVoters(address[] memory)" ["0xaEBe808C339D5F4384c06A9e7e11ac921d495aE3","0xe4bAAB547d6c533ECD6901BF11912f924c3a4130","0xF865575b4B94615f6b1354C5b8D79C08EAe3F9CE"] \
-rpc-url $ALCHEMY_RPC_URL --private-key $PK_DEPLOYER --legacy
+--rpc-url $ALCHEMY_RPC_URL --private-key $PK_DEPLOYER --legacy
 
 ## Votamos
 cast send $CONTRACT_ADDRESS "vote(uint8)" 0 --rpc-url $ALCHEMY_RPC_URL --private-key $PK_VOTER1 --gas-limit 500000 --legacy
